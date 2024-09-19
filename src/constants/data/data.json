@@ -1,0 +1,38 @@
+{
+  "devInfo": {
+    "name": "Juan Sebastian Gonzalez",
+    "jobTitle": "Desarrollador Junior FullStack",
+    "image": "Dev_Img.jpg",
+    "introduction": "Bienvenido a mi portafolio de software. Aquí muestro una variedad de proyectos en programación y desarrollo web, desde aplicaciones interactivas hasta herramientas personalizadas. Explora mis trabajos para ver cómo convierto ideas en soluciones efectivas.",
+    "university": "Universidad de San Buenaventura",
+    "degree": "Tecnologo en Desarrollo de software"
+  },
+  "links": {
+    "github": "https://github.com/JSGPDev",
+    "facebook": "#",
+    "whatsapp": "https://wa.me/3042549815?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20proyectos.%20%C2%BFPodr%C3%ADas%20enviarme%20m%C3%A1s%20detalles%3F",
+    "instagram": "#",
+    "linkedin": "https://www.linkedin.com/in/juan-prieto-44011732a",
+    "universityLink": "https://usb.edu.co"
+  },
+
+  "projects": {
+    "01": {
+      "name": "AEC - Atención en Casa",
+      "image": {
+        "src": "placeholder.webp",
+        "alt": "placeholder"
+      },
+      "media": {
+        "videoUrl": "https://www.youtube.com/embed/NpEaa2P7qZI?si=x9sPN5sox7Whm9uu",
+        "liveUrl": "https://atencionencasa.com.co"
+      },
+      "description": "Desarrollé la aplicación web AEC Atención en Casa para Procomercio Digital, una plataforma que facilita la contratación de servicios de salud a domicilio, como acompañamiento, administración de medicamentos y terapias físicas. El proyecto se centró en ofrecer una experiencia de usuario intuitiva, permitiendo a los clientes seleccionar y contratar servicios de manera sencilla. Me encargué del diseño y desarrollo completo de la aplicación, desde la arquitectura hasta el despliegue, asegurando un alto nivel de funcionalidad y accesibilidad.",
+      "status": "Desplegado",
+      "technologies": {
+        "languages": ["HTML", "JavaScript", "CSS"],
+        "framework": "Vanilla JS"
+      }
+    }
+  }
+}

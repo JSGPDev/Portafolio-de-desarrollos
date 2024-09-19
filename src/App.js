@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import InfoBoxComponent from "./components/infoBoxComponent";
+import ControlButtonComponent from "./components/controlButtonComponent";
 
 function App() {
+  const [currentWindow, setCurrentWindow] = useState("devInfo");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section className="content-Control">
+        <ControlButtonComponent
+          isShowed={currentWindow === "devInfo"}
+          text="Informacion Personal"
+          className="medium-text-size"
+          action={() => setCurrentWindow("devInfo")}
+        />
+
+        <ControlButtonComponent
+          isShowed={currentWindow === "projectsList"}
+          text="Lista De Proyectos"
+          className="medium-text-size"
+          action={() => setCurrentWindow("projectsList")}
+        />
+
+        <ControlButtonComponent
+          isShowed={currentWindow === "Contact"}
+          text="Contacto"
+          className="medium-text-size"
+          action={() => setCurrentWindow("Contact")}
+        />
+      </section>
+
+      <InfoBoxComponent currentWindow={currentWindow} />
+    </main>
   );
 }
 
