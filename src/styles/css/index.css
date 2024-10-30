@@ -447,6 +447,44 @@ footer {
   object-fit: cover;
 }
 
+.carousel-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+.dot {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--text-muted);
+}
+
+.arrow {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--text-muted);
+}
+
+.arrow-right {
+  transform: rotate(90deg);
+}
+
+.arrow-left {
+  transform: rotate(-90deg);
+}
+
+.arrow:hover {
+  background-color: var(--text-link);
+  cursor: pointer;
+}
+
 .hidden {
   visibility: hidden;
 }

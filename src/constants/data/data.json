@@ -19,10 +19,16 @@
   "projects": {
     "01": {
       "name": "AEC - Atención en Casa",
-      "image": {
-        "src": "placeholder.webp",
-        "alt": "placeholder"
-      },
+      "images": [
+        {
+          "src": "placeholder.png",
+          "alt": "placeholder"
+        },
+        {
+          "src": "placeholder.webp",
+          "alt": "placeholder"
+        }
+      ],
       "media": {
         "videoUrl": "https://www.youtube.com/embed/NpEaa2P7qZI?si=x9sPN5sox7Whm9uu",
         "liveUrl": "https://atencionencasa.com.co"

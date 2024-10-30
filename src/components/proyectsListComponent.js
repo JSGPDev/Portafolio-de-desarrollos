@@ -1,11 +1,10 @@
 import { useState } from "react";
 import useFetchData from "../constants/hooks/UseFetchData";
 import ImageComponent from "./imgComponent";
-
+import ImageCarouselComponent from "./imgCarouselComponent";
 const ProjectItem = ({
   name,
-  img,
-  imgAlt,
+  imgs,
   video,
   description,
   status,
@@ -27,7 +26,7 @@ const ProjectItem = ({
         {name}
       </p>
 
-      {video && (
+      {video && showDescription && (
         <div class="video-container">
           <iframe
             src={video}
@@ -38,14 +37,29 @@ const ProjectItem = ({
         </div>
       )}
 
-      {!video && img && (
+      {!showDescription && imgs.length <= 0 && (
+        <div class="video-container">
+          <iframe
+            src={video}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      )}
+
+      {!showDescription && imgs.length == 1 && (
         <ImageComponent
           position="top-center"
-          size="medium-size"
+          size="medium-size "
           radius="large-radius"
-          src={img || "placeholder.webp"}
-          alt={imgAlt || "Placeholder"}
+          src={imgs[0].img || "placeholder.webp"}
+          alt={imgs[0].imgAlt || "Placeholder"}
         />
+      )}
+
+      {!showDescription && imgs.length > 1 && (
+        <ImageCarouselComponent images={imgs} />
       )}
 
       {showDescription && (
@@ -102,8 +116,7 @@ const ProyectsListComponent = () => {
         <ProjectItem
           key={key}
           name={project.name}
-          img={project.image.src}
-          imgAlt={project.image.alt}
+          imgs={project.images}
           video={project.media.videoUrl}
           description={project.description}
           status={project.status}
