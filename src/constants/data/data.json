@@ -1,7 +1,7 @@
 {
   "devInfo": {
     "name": "Juan Sebastian Gonzalez",
-    "jobTitle": "Desarrollador Junior FullStack",
+    "jobTitle": "Desarrollador Junior",
     "image": "Dev_Img.jpg",
     "introduction": "Bienvenido a mi portafolio de software. Aquí muestro una variedad de proyectos en programación y desarrollo web, desde aplicaciones interactivas hasta herramientas personalizadas. Explora mis trabajos para ver cómo convierto ideas en soluciones efectivas.",
     "university": "Universidad de San Buenaventura",
@@ -21,16 +21,28 @@
       "name": "AEC - Atención en Casa",
       "images": [
         {
-          "src": "placeholder.png",
-          "alt": "placeholder"
+          "src": "https://drive.google.com/file/d/1H-gZsrcrDeMzp4SNARa01CkFXLkphiSM/preview",
+          "alt": "imagen 01 de ejemplo del proyecto"
         },
         {
-          "src": "placeholder.webp",
-          "alt": "placeholder"
+          "src": "https://drive.google.com/file/d/11MTp_0UuNn_gUgeutfbxgz-f4KobEMQm/preview",
+          "alt": "imagen 02 de ejemplo del proyecto"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1LxhaQc5HcJSaY4_YDOZoW2Nx9Hw4DdxO/preview",
+          "alt": "imagen 03 de ejemplo del proyecto"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1TaiT5KgxqAOfVRL5Xy_XzEqXy5QTNJzm/preview",
+          "alt": "imagen 04 de ejemplo del proyecto"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1bKT2Sndjh_PxG1YSzsSPejFqfqANyvBz/preview",
+          "alt": "imagen 05 de ejemplo del proyecto"
         }
       ],
       "media": {
-        "videoUrl": "https://www.youtube.com/embed/NpEaa2P7qZI?si=x9sPN5sox7Whm9uu",
+        "videoUrl": "",
         "liveUrl": "https://atencionencasa.com.co"
       },
       "description": "Desarrollé la aplicación web AEC Atención en Casa para Procomercio Digital, una plataforma que facilita la contratación de servicios de salud a domicilio, como acompañamiento, administración de medicamentos y terapias físicas. El proyecto se centró en ofrecer una experiencia de usuario intuitiva, permitiendo a los clientes seleccionar y contratar servicios de manera sencilla. Me encargué del diseño y desarrollo completo de la aplicación, desde la arquitectura hasta el despliegue, asegurando un alto nivel de funcionalidad y accesibilidad.",

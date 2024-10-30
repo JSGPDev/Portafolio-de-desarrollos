@@ -25,7 +25,7 @@ const ImageCarouselComponent = ({ images }) => {
         src={images[currentImageIndex].src}
         alt={images[currentImageIndex].alt}
         position="top-center"
-        size="medium-size "
+        size="big-size"
         radius="large-radius"
       />
       <div className="carousel-inputs">
